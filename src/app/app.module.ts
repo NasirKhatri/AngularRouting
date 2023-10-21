@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { InpatientsModule } from './modules/inpatients/inpatients.module';
+import { OutpatientsModule } from './modules/outpatients/outpatients.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InpatientsModule,
+    OutpatientsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
